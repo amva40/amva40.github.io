@@ -28,7 +28,7 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
 
         & > button {
@@ -50,6 +50,9 @@
             text-shadow: 1px 1px 0 rgba(black, .34);
             outline: none;
 
+            &:nth-child(2) {
+                margin-left: 50% - 48.5%;
+            }
             &:hover {
                 background-color: $lightBlue;
             }
