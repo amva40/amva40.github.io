@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4a82b94.chunk.css",
+    "main.js": "/static/js/main.8c08fe86.chunk.js",
+    "main.js.map": "/static/js/main.8c08fe86.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.91ce575b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.91ce575b.js.map",
+    "static/js/2.0790c430.chunk.js": "/static/js/2.0790c430.chunk.js",
+    "static/js/2.0790c430.chunk.js.map": "/static/js/2.0790c430.chunk.js.map",
+    "static/js/3.d7af7e8d.chunk.js": "/static/js/3.d7af7e8d.chunk.js",
+    "static/js/3.d7af7e8d.chunk.js.map": "/static/js/3.d7af7e8d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a4a82b94.chunk.css.map": "/static/css/main.a4a82b94.chunk.css.map",
+    "static/js/2.0790c430.chunk.js.LICENSE.txt": "/static/js/2.0790c430.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/vag-rounded.d2c421dd.otf",
+    "static/media/area40_color.b6cc96fc.svg": "/static/media/area40_color.b6cc96fc.svg",
+    "static/media/capsula.94f052b9.webm": "/static/media/capsula.94f052b9.webm",
+    "static/media/capsule_render.4e8bed22.glb": "/static/media/capsule_render.4e8bed22.glb",
+    "static/media/icon-atlas.a5c1dc54.png": "/static/media/icon-atlas.a5c1dc54.png",
+    "static/media/layer_dem_amva.7d269251.glb": "/static/media/layer_dem_amva.7d269251.glb",
+    "static/media/plant.34e3fdc2.glb": "/static/media/plant.34e3fdc2.glb"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91ce575b.js",
+    "static/js/2.0790c430.chunk.js",
+    "static/css/main.a4a82b94.chunk.css",
+    "static/js/main.8c08fe86.chunk.js"
+  ]
+}
