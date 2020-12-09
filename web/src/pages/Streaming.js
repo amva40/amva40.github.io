@@ -1,36 +1,13 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import StreamingTest from '../assets/videos/capsula.webm';
+import StreamingTest from '../assets/videos/streaming_test.mp4';
+import CapsuleGif from '../assets/videos/capsule_gif.mp4';
 import './Streaming.scss';
 
-export default function Streaming({
-    onBackClick 
-}) {
-    const boxAnimation = useSpring({
-        opacity: 1,
-        from: {
-            opacity: 0,
-        },
-    });
-    const [, setViewState] = React.useState();
-    const [, setLayers] = React.useState();
-    const [, setMapStyle] = React.useState();
-
+export default function Streaming() {
     return (
-        <>
-            <animated.div className="streaming" style={boxAnimation}>
-                <video src={StreamingTest} autoPlay={true} loop={true} />
-            </animated.div>
-            <Footer view={"video"} />
-            <Header
-                setViewState={setViewState}
-                setLayers={setLayers}
-                setMapStyle={setMapStyle}
-                onClick={() => onBackClick()}
-                inStreaming={true}
-            />
-        </>
+        <div className="streaming">
+            <video src={StreamingTest} autoPlay muted loop className="streaming" />
+            <video src={CapsuleGif} autoPlay muted loop className="capsule" />
+        </div>
     );
 }
