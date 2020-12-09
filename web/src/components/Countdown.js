@@ -45,7 +45,7 @@ export default function Countdown() {
         <animated.div className="countdown" style={boxAnimation}>
             en el 2030 acabaremos con nuestros recursos hídricos si no los gestionamos de manera adecuada:
             {` ${(`0${time.years}`.substr(-2))}`} año{time.years === 1 ? '' : 's'},
-            {` ${(`0${time.days}`.substr(-2))}`} día{time.days === 1 ? '' : 's'},
+            {` ${(`00${time.days}`.substr(-3))}`} día{time.days === 1 ? '' : 's'},
             {` ${(`0${time.hours}`.substr(-2))}`} hora{time.hours === 1 ? '' : 's'},
             {` ${(`0${time.minutes}`.substr(-2))}`} minuto{time.minutes === 1 ? '' : 's'} y
             {` ${(`0${time.seconds}`.substr(-2))}`} segundo{time.seconds === 1 ? '' : 's'}
