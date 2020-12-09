@@ -14,9 +14,11 @@ const texts = {
 };
 
 export default function Footer({ currentPage }) {
+    const text = texts[currentPage === 'map-initial' ? 'map-amva' : currentPage];
+
     return (
         <div className="footer">
-            <div className="text" dangerouslySetInnerHTML={{ __html: texts[currentPage] }}/>
+            {typeof text === 'string' && <div className="text" dangerouslySetInnerHTML={{ __html: text }}/>}
             <Countdown />
         </div>
     );
