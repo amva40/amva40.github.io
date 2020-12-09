@@ -1,15 +1,11 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import Logo from './Logo';
-import * as states from '../states';
 import './Header.scss';
 
 export default function Header({
-    setViewState,
-    setLayers,
-    setMapStyle,
     onClick,
-    inStreaming,
+    currentPage,
 }) {
     const boxAnimation = useSpring({
         top: '1rem',
@@ -26,23 +22,13 @@ export default function Header({
                 <Logo scale={2} />
             </div>
             <div className="actions">
-                <button
-                    onClick={() => {
-                        setViewState(states.AMVA_STATE_180deg.view_state);
-                        setLayers(states.AMVA_STATE_180deg.layers);
-                        setMapStyle(states.AMVA_STATE_180deg.map_style);
-                        setViewState(states.AMVA_STATE_180deg.view_state);
-                        onClick('amva');
-                    }}
-                >Área</button>
-                {(!inStreaming) && (<button
-                    onClick={() => {
-                        setViewState(states.CAPSULE_STATE.view_state);
-                        setLayers(states.CAPSULE_STATE.layers);
-                        setMapStyle(states.CAPSULE_STATE.map_style);
-                        onClick('capsule');
-                    }}
-                >Cápsula</button>)}
+                {(currentPage !== 'map-amva' && currentPage !== 'map-initial') && (
+                    <button onClick={() => onClick('map-amva')}>Área</button>
+                )}
+                {(currentPage === 'map-amva' || currentPage === 'map-initial') && (
+                    <button onClick={() => onClick('map-capsule')}>Cápsula</button>
+                )}
+                {currentPage === 'capsule-video' && <button onClick={() => onClick('streaming')}>En vivo</button>}
             </div>
         </animated.div>
     );
