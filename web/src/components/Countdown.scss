@@ -6,7 +6,7 @@
         size: .7rem;
         weight: bold;
     }
-    background-color: rgba($gray, .6);
+    background-color: rgba($gray, .8);
     padding: .5em 1em;
     border-radius: 4px 0 0 0;
     text-align: center;
@@ -19,5 +19,14 @@
         width: 100%;
         border-radius: 0;
         padding: .35em .5em;
+    }
+
+    & > span {
+        font: {
+            family: MajorMonoDisplay;
+            weight: bold;
+            size: 1em;
+        }
+        color: white;
     }
 }

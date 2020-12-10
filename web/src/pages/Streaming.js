@@ -1,5 +1,5 @@
 import React from 'react';
-import StreamingTest from '../assets/videos/streaming_test.webm';
+import StreamingTest from '../assets/videos/streaming_test.mp4';
 import './Streaming.scss';
 
 export default function Streaming() {
